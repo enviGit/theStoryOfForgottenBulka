@@ -6,7 +6,6 @@ public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D rb;
     private BoxCollider2D coll;
-    private SpriteRenderer sprite;
     private Animator animator;
     [SerializeField] private LayerMask jumpableGround;
     private float x = 0f;
@@ -20,9 +19,9 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         coll = GetComponent<BoxCollider2D>();
-        sprite = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
     }
+
     // Update is called once per frame
     private void Update()
     {
@@ -45,12 +44,12 @@ public class PlayerMovement : MonoBehaviour
         if (x > 0f)
         {
             state = movementState.running;
-            sprite.flipX = false;
-        }
+            transform.localScale = new Vector2(0.6f, 0.6f);
+        }   
         else if (x < 0f)
         {
             state = movementState.running;
-            sprite.flipX = true;
+            transform.localScale = new Vector2(-0.6f, 0.6f);
         }
         else
         {
@@ -59,10 +58,10 @@ public class PlayerMovement : MonoBehaviour
 
         if(rb.velocity.y > .1f)
         {
-            state = movementState.jumping;
-        }else if(rb.velocity.y < -.1f)
+            state = state = movementState.jumping;
+        }else if (rb.velocity.y < -.1f)
         {
-            state = movementState.falling;
+            state = state = movementState.falling;
         }
 
         animator.SetInteger("state", (int)state);

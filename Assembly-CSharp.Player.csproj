@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{32648364-FF00-546E-7129-F951C98AFD95}</ProjectGuid>
+    <ProjectGuid>{9894A67F-B0D0-C977-E24E-E8C3B43C3B9A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -685,31 +685,31 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.InternalAPIEngineBridge.001.Player.csproj">
-      <Project>{7DE3745B-F344-4FC8-51A3-EA7D9BA905DC}</Project>
+      <Project>{BA84B14F-BE92-B609-7017-4BECE71EE1BB}</Project>
       <Name>Unity.InternalAPIEngineBridge.001.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Timeline.Player.csproj">
-      <Project>{9F98418A-3A66-26DB-2417-BB1314668CBC}</Project>
+      <Project>{90051C67-2ED0-3408-A45F-35CCE6ECCF40}</Project>
       <Name>Unity.Timeline.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.Player.csproj">
-      <Project>{64FA3E20-B4F6-1F53-2467-E6353C1CBBB6}</Project>
+      <Project>{44124D9F-0E64-A4CA-6141-FD0A037906C0}</Project>
       <Name>Unity.TextMeshPro.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.Common.Runtime.Player.csproj">
-      <Project>{5E2A3C38-23B8-CFA5-918C-48ED28F31023}</Project>
+      <Project>{8BBBB8A5-CEF2-369B-9DFF-37E9B89FB31E}</Project>
       <Name>Unity.2D.Common.Runtime.Player</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.Player.csproj">
-      <Project>{E34D5E58-BD19-DA67-7EDE-0C5D111553F9}</Project>
+      <Project>{8E1252EF-B469-692D-EE7B-76DF1EC77ED8}</Project>
       <Name>UnityEngine.UI.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.SpriteShape.Runtime.Player.csproj">
-      <Project>{8974A25F-0486-1D41-9642-39EDC6E352F6}</Project>
+      <Project>{CAAAE9CE-34A2-6EC6-E734-F6BC2A18C3B3}</Project>
       <Name>Unity.2D.SpriteShape.Runtime.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Mathematics.Player.csproj">
-      <Project>{DA975DEF-C95E-99CA-A911-DF6620302E08}</Project>
+      <Project>{5AA3AB2F-5F58-8362-93D3-F712D8E45C05}</Project>
       <Name>Unity.Mathematics.Player</Name>
     </ProjectReference>
   </ItemGroup>

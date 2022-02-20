@@ -753,8 +753,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1759140570}
-        m_TargetAssemblyTypeName: GameStart, Assembly-CSharp
-        m_MethodName: WylaczGre
+        m_TargetAssemblyTypeName: Game, Assembly-CSharp
+        m_MethodName: quitGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
