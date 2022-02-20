@@ -78,13 +78,13 @@ public class PlayerMovement : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Level1"))
         {
-            levelText.text = "LEVEL 1";
+            levelText.text = "LEVEL 1\nEASY";
         }else if(collision.gameObject.CompareTag("Level2"))
         {
-            levelText.text = "LEVEL 2";
+            levelText.text = "LEVEL 2\nMEDIUM";
         }else if (collision.gameObject.CompareTag("Level3"))
         {
-            levelText.text = "LEVEL 3";
+            levelText.text = "LEVEL 3\nHARD";
         }
     }
 }

@@ -7,8 +7,13 @@ public class PlayerLife : MonoBehaviour
 {
     private Rigidbody2D rb;
     private Animator animator;
+    private DeathManager dm;
     [SerializeField] private AudioSource deathSound;
 
+    private void Awake()
+    {
+        dm = GameObject.FindObjectOfType<DeathManager>();
+    }
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -20,11 +25,13 @@ public class PlayerLife : MonoBehaviour
         if (collision.gameObject.CompareTag("Trap"))
         {
             Die();
+            
         }
     }
 
     private void Die()
     {
+        dm.IncreaseDeaths();
         deathSound.Play();
         rb.bodyType = RigidbodyType2D.Static;
         animator.SetTrigger("death");
