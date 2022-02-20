@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Bulka
   - Trap
+  - Level1
+  - Level2
+  - Level3
   layers:
   - Default
   - TransparentFX
